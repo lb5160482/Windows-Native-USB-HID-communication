@@ -40,7 +40,7 @@ int main(int argc, char **argv) {
 	
 	while (true) {		
 		// read message from device
-		//ReadFile(deviceHandle, buf, len, &len, &osReader); // use this if using FILE_FLAG_OVERLAPPED mode
+		//UsbDevice::readDataFromDevice(deviceHandle, buf, len, &len, &osReader); // use this if using FILE_FLAG_OVERLAPPED mode
 		UsbDevice::readDataFromDevice(deviceHandle, buf, len, &len, NULL);
 		
 		string msg("");
